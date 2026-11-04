@@ -54,13 +54,12 @@ body{
     height: 100%;
     max-width: 420px;
     margin: auto;
-    margin-top: 64px;
-    margin-bottom: 64px;
 }
 
 h1 {
     font-family: 'silkscreen';
     font-size: 48px;
+    margin: 64px 0 64px 0;
 }
 
 h2 {
@@ -125,6 +124,7 @@ h2 {
     .mobile_img {
         visibility: hidden;
         max-height: 0;
+        margin: 0;
     }
 }
 
@@ -163,8 +163,8 @@ h2 {
     margin-top: 32px;
     margin-bottom: 128px;
     align-items: center;
-    justify-content: space-around;
     display: flex;
+    justify-content: space-around;
 }
 
 a{
