@@ -8,6 +8,26 @@
     src: url('fonts/Silkscreen-Regular.woff2');
 }
 
+/* CRT Effect */
+.crt{
+  content: " ";
+  display: block;
+  position: fixed;
+
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 9999;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
 body{
     background-color: #120e14;
     color: white;
@@ -16,13 +36,23 @@ body{
 }
 
 .text-container {
-    padding: 0 16px 0 16px;
+    padding: 0;
     margin: 0px;
     text-align: center;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: white;
 }
 
-.text-container img{
+.text-container p {
+    padding: 0 64px 0 64px;
+}
+
+.image-container img{
     display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 420px;
     margin: auto;
     margin-top: 64px;
     margin-bottom: 64px;
@@ -36,4 +66,97 @@ h1 {
 h2 {
     font-family: 'silkscreen';
     font-size: 24px;
+}
+
+.navbar ul{
+	list-style:none;
+	margin:0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: white;
+}
+
+.navbar li{
+    display:block;
+    padding: 16px 0 16px 0;
+}
+
+.navbar a{
+    color:white;
+    text-decoration: none;
+}
+
+.game-tile{
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 128px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.game-tile img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 420px;
+}
+
+@media (min-width: 900px) {
+    .game-tile{
+        display: flex;
+    }
+    .game-tile img{
+        margin: 0;
+    }
+    #game-info-container {
+        width: 50%;
+    }
+}
+
+#container {
+  height:300px; 
+  position:relative; 
+  overflow:hidden;
+}
+
+.scroller {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  animation: scrollermove 45s linear infinite;
+}
+
+.scroller img {
+  flex: 0 0 auto;
+  margin: 0 0.5em; 
+}
+
+@keyframes scrollermove {
+  0% {
+      transform: translate(0, 0);
+  }
+  100% {
+      transform: translate(-50%, 0);
+  }
+}
+
+.game-tile-buttons{
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 128px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+a{
+  color:#d9caff;
+  text-decoration: none;
 }
