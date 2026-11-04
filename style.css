@@ -88,6 +88,16 @@ h2 {
     text-decoration: none;
 }
 
+.links-container{
+    padding: 16px;
+    padding-bottom: 32px;
+}
+
+.links-container a{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
 .game-tile{
     margin: auto;
     margin-top: 32px;
