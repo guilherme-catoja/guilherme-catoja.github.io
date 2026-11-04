@@ -171,3 +171,60 @@ a{
   color:#d9caff;
   text-decoration: none;
 }
+
+.web-games-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 900px) {
+    .web-games-grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5rem;
+        padding: 5rem;
+    }
+}
+
+.web-game-tile{
+  border: 3px solid;
+  border-color: white;
+}
+
+.web-game-tile{
+  overflow: hidden;
+}
+
+.web-game-tile p{
+  margin: 0;
+  padding: 6px 0 6px 6px;
+}
+
+.web-game-tile a{
+  color:white;
+  text-decoration: none;
+}
+
+.web-game-tile img{
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  object-fit: cover;
+  aspect-ratio: 3 / 4; /* Width:Height ratio */
+  image-rendering: pixelated;
+
+  margin: 0;
+}
+
+.tile-image-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+footer{
+    text-align: center;
+}
