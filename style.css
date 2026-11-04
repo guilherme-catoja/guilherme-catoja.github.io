@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'vt323';
+    src: url('fonts/VT323-Regular.woff2');
+}
+
+@font-face {
+    font-family: 'silkscreen';
+    src: url('fonts/Silkscreen-Regular.woff2');
+}
+
+body{
+    background-color: #120e14;
+    color: white;
+    font-family: 'vt323';
+    font-size: 24px;
+}
+
+.text-container {
+    padding: 0 16px 0 16px;
+    margin: 0px;
+    text-align: center;
+}
+
+.text-container img{
+    display: block;
+    margin: auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+h1 {
+    font-family: 'silkscreen';
+    font-size: 48px;
+}
+
+h2 {
+    font-family: 'silkscreen';
+    font-size: 24px;
+}
