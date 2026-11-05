@@ -101,7 +101,7 @@ h2 {
 .game-tile{
     margin: auto;
     margin-top: 32px;
-    margin-bottom: 128px;
+    margin-bottom: 0px;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -124,6 +124,7 @@ h2 {
 @media (min-width: 900px) {
     .game-tile{
         display: flex;
+        margin-bottom: 96px;
     }
     .game-tile img{
         margin: 0;
@@ -171,7 +172,7 @@ h2 {
 .game-tile-buttons{
     margin: auto;
     margin-top: 32px;
-    margin-bottom: 128px;
+    margin-bottom: 32px;
     align-items: center;
     display: flex;
     justify-content: space-around;
@@ -233,6 +234,15 @@ a{
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.unreleased-games-grid-container {
+  display: flex;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 footer{
