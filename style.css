@@ -28,11 +28,81 @@
   pointer-events: none;
 }
 
+/* Scrollbar Firefox*/
+@-moz-document url-prefix() {
+    html {
+        scrollbar-width: 16px;
+        scrollbar-color: #ab99cf #3f385e;
+    }
+}
+
+/* Scrollbar Chrome, Edge, Safari*/
+
+::-webkit-scrollbar-track {
+  background: #3f385e;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar:horizontal {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ab99cf;
+  border: 3px solid #d9caff;
+  border-top-color: #d9caff;
+  border-left-color: #d9caff;
+  border-right-color: #8472ad;
+  border-bottom-color: #8472ad;
+}
+
+::-webkit-scrollbar-button {
+    background-size: 100%;
+    height: 16px;
+    width: 16px;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-button:horizontal:increment { /* Right */
+    background-image: url(images/scrollbar_right2.png);
+}
+
+::-webkit-scrollbar-button:horizontal:decrement { /* Left */
+    background-image: url(images/scrollbar_left2.png);
+}
+
+::-webkit-scrollbar-button:vertical:increment { /* Down */
+    background-image: url(images/scrollbar_down2.png);
+}
+
+::-webkit-scrollbar-button:vertical:decrement { /* Up */
+    background-image: url(images/scrollbar_up2.png);
+}
+
+/*Text selection*/
+
+*::selection {
+  background: #ab99cf;
+  color: #e1dee7;
+}
+*::-moz-selection {
+  background: #ab99cf;
+  color: #e1dee7;
+}
+*::-webkit-selection {
+  background: #ab99cf;
+  color: #e1dee7;
+}
+
 body{
     background-color: #120e14;
     color: white;
     font-family: 'vt323';
     font-size: 24px;
+    margin-top: 0;
 }
 
 .text-container {
@@ -60,6 +130,7 @@ h1 {
     font-family: 'silkscreen';
     font-size: 48px;
     margin: 64px 0 64px 0;
+    color: #ab99cf;
 }
 
 h2 {
@@ -94,8 +165,10 @@ a{
 }
 
 .links-container{
-    padding: 16px;
-    padding-bottom: 32px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6px;
 }
 
 .links-container a{
@@ -103,13 +176,18 @@ a{
     margin-right: 16px;
 }
 
+.links-container img{
+    max-width: 42px;
+    max-height: 42px;
+}
+
 .window {
     margin: 0;
     margin-bottom: 96px;
     text-align: left;
     border-style: solid;
-    border-color: white;
-
+    border-image: linear-gradient(to right,rgba(92, 79, 125, 1) 0%, rgba(132, 114, 173, 1) 100%) 1;
+    border-width: 6px;
 }
 
 @media (min-width: 900px) {
@@ -121,16 +199,60 @@ a{
 
 .window-title{
     background: linear-gradient(90deg,rgba(92, 79, 125, 1) 0%, rgba(132, 114, 173, 1) 100%);
+    display: table;
+    width: 100%;
 }
 
 .window-title h2{
-    margin: 0;
-    padding: 16px;
+    font-size: 30px;
+    display: table-cell;
+    vertical-align:middle
+}
+
+.window-title .links-container{
+    justify-content: right;
+}
+
+.window-title a{
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin: 0px;
+    margin-left: 8px;
+    background-color: #b6b8c7;
+    color:black;
+    text-decoration: none;
+    padding: 4px;
+    border-style: outset;
+    border-color: #e1dee7;
+    aspect-ratio: 1/1;
+    width: 32px;
+    height: 32px;
+    box-shadow: 2px 2px 0 1px black;
+}
+
+.window-title a:active{
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin: 0px;
+    margin-left: 8px;
+    background-color: #868d9b;
+    color:black;
+    text-decoration: none;
+    padding: 4px;
     border-style: solid;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-color: white;
+    border-color: black;
+    aspect-ratio: 1/1;
+    width: 32px;
+    height: 32px;
+    box-shadow: 0 0 0 0 ;
+}
+
+.window-title a img{
+    margin: auto;
+    max-width: 32px;
+    max-height: 32px;
 }
 
 .window .image-container {
