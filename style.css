@@ -67,6 +67,11 @@ h2 {
     font-size: 24px;
 }
 
+a{
+  color:#d9caff;
+  text-decoration: none;
+}
+
 .navbar ul{
 	list-style:none;
 	margin:0;
@@ -98,12 +103,45 @@ h2 {
     margin-right: 16px;
 }
 
+.window {
+    margin: 0;
+    margin-bottom: 96px;
+    text-align: left;
+    border-style: solid;
+    border-color: white;
+
+}
+
+@media (min-width: 900px) {
+    .window {
+        margin: 32px;
+    }
+}
+
+.window-title{
+    background: linear-gradient(90deg,rgba(92, 79, 125, 1) 0%, rgba(132, 114, 173, 1) 100%);
+}
+
+.window-title h2{
+    margin: 0;
+    padding: 16px;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: white;
+}
+
+.window .image-container {
+    margin: 8px;
+}
+
 .game-tile{
     margin: auto;
-    margin-top: 32px;
-    margin-bottom: 0px;
     align-items: center;
     justify-content: space-evenly;
+    font-size: 28px;
+    text-align: center;
 }
 
 .game-tile img{
@@ -124,7 +162,6 @@ h2 {
 @media (min-width: 900px) {
     .game-tile{
         display: flex;
-        margin-bottom: 96px;
     }
     .game-tile img{
         margin: 0;
@@ -140,7 +177,7 @@ h2 {
 }
 
 #container {
-  height:250px; 
+  height:236px; 
   position:relative; 
   overflow:hidden;
 }
@@ -171,16 +208,33 @@ h2 {
 
 .game-tile-buttons{
     margin: auto;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     align-items: center;
     display: flex;
     justify-content: space-around;
 }
 
-a{
-  color:#d9caff;
-  text-decoration: none;
+.game-tile-buttons a{
+    background-color: #b6b8c7;
+    color:black;
+    text-decoration: none;
+    padding: 12px;
+    border-style: outset;
+    border-color: #e1dee7;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.game-tile-buttons a:active{
+    background-color: #868d9b;
+    color:black;
+    text-decoration: none;
+    padding: 12px;
+    border-style: solid;
+    border-color: black;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .web-games-grid-container {
