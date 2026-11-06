@@ -114,7 +114,8 @@ a{
 
 @media (min-width: 900px) {
     .window {
-        margin: 32px;
+        margin: 6%;
+        margin-top: 0;
     }
 }
 
