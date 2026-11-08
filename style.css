@@ -114,10 +114,6 @@ body{
     border-color: white;
 }
 
-.text-container p {
-    padding: 0 64px 0 64px;
-}
-
 .image-container img{
     display: block;
     width: 100%;
@@ -128,7 +124,7 @@ body{
 
 h1 {
     font-family: 'silkscreen';
-    font-size: 48px;
+    font-size: 52px;
     margin: 64px 0 64px 0;
     color: #ab99cf;
 }
@@ -141,6 +137,10 @@ h2 {
 a{
   color:#d9caff;
   text-decoration: none;
+}
+
+p{
+    padding: 0%;
 }
 
 .navbar {
@@ -156,7 +156,8 @@ a{
 	margin:0;
     padding: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    position: relative;
     border-style: solid;
     border-width: 0 0 2px 0;
     border-color: white;
@@ -167,9 +168,36 @@ a{
     padding: 16px 0 16px 0;
 }
 
-.navbar a{
+.navbar a {
     color:white;
     text-decoration: none;
+}
+
+.back-button {
+    margin-top: 58px;
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    background-color: #b6b8c7;
+    color:black;
+    text-decoration: none;
+    padding: 12px;
+    border-style: outset;
+    border-color: #e1dee7;
+}
+
+.back-button:active{
+    background-color: #868d9b;
+    color:black;
+    text-decoration: none;
+    padding: 12px;
+    border-style: solid;
+    border-color: black;
+}
+
+.back-button li {
+    color:black;
+    padding: 0%;
 }
 
 .page-title {
@@ -210,7 +238,7 @@ a{
 }
 
 .window-title{
-    background: linear-gradient(90deg,rgba(92, 79, 125, 1) 0%, rgba(132, 114, 173, 1) 100%);
+    background: linear-gradient(90deg,#5c4f7d 0%, #8472ad 100%);
     display: table;
     width: 100%;
 }
