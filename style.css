@@ -204,6 +204,22 @@ p{
     margin-top: 128px;
 }
 
+.main-links-container{
+    margin: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-links-container a{
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+.main-links-container img{
+    max-width: 42px;
+    max-height: 42px;
+}
+
 .links-container{
     margin: 0;
     display: flex;
