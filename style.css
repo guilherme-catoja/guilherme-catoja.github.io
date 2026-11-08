@@ -183,12 +183,21 @@ p{
 
 .navbar li{
     display:block;
-    padding: 16px 0 16px 0;
 }
 
 .navbar a {
-    color:white;
+    display: block;
+    padding: 16px 24px;
     text-decoration: none;
+}
+
+.current-page {
+    background-color: white;
+    color: #120e14;
+}
+
+.not-current-page {
+    color: white;
 }
 
 .back-button {
@@ -205,10 +214,13 @@ p{
 }
 
 .back-button:active{
+    margin-top: 64px;
+    position: absolute;
+    left: 8px;
+    top: 4px;
     background-color: #868d9b;
     color:black;
     text-decoration: none;
-    padding: 12px;
     border-style: solid;
     border-color: black;
 }
