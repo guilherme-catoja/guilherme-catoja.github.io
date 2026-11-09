@@ -192,8 +192,14 @@ p{
 
 .navbar a {
     display: block;
-    padding: 16px 24px;
+    padding: 8px 12px;
     text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  .navbar a {
+    padding: 16px 24px;
+  }
 }
 
 .current-page {
