@@ -217,6 +217,7 @@ p{
     padding: 12px;
     border-style: outset;
     border-color: #e1dee7;
+    box-shadow: 2px 2px 0 1px black;
 }
 
 .back-button:active{
@@ -229,11 +230,6 @@ p{
     text-decoration: none;
     border-style: solid;
     border-color: black;
-}
-
-.back-button li {
-    color:black;
-    padding: 0%;
 }
 
 .page-title {
