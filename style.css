@@ -32,7 +32,7 @@
 @-moz-document url-prefix() {
     html {
         scrollbar-width: 16px;
-        scrollbar-color: #ab99cf #3f385e;
+        scrollbar-color: white #120e14;
     }
 }
 
