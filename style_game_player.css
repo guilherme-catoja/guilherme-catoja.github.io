@@ -28,6 +28,21 @@
   pointer-events: none;
 }
 
+/*Text selection*/
+
+*::selection {
+  background: #ab99cf;
+  color: #e1dee7;
+}
+*::-moz-selection {
+  background: #ab99cf;
+  color: #e1dee7;
+}
+*::-webkit-selection {
+  background: #ab99cf;
+  color: #e1dee7;
+}
+
 html {
   margin: 0;
   padding: 0;

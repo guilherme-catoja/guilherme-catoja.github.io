@@ -158,8 +158,7 @@ h3 {
 }
 
 a{
-  color:#d9caff;
-  text-decoration: none;
+  color:#55d629;
 }
 
 p{
@@ -487,7 +486,11 @@ p{
     color:lightgray;
 }
 
-.github-repo a{
+.github-repo-link{
+    text-decoration: none;
+}
+
+.github-repo h3{
     color: #4493f8;
 }
 
