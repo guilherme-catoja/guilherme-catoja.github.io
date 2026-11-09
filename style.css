@@ -138,9 +138,15 @@ body{
 
 h1 {
     font-family: 'silkscreen';
-    font-size: 52px;
+    font-size: 40px;
     margin: 64px 0 64px 0;
     color: #ab99cf;
+}
+
+@media (min-width: 900px) {
+    h1 {
+        font-size: 52px;
+    }
 }
 
 h2 {
@@ -274,6 +280,7 @@ p{
     border-style: solid;
     border-image: linear-gradient(to right,rgba(92, 79, 125, 1) 0%, rgba(132, 114, 173, 1) 100%) 1;
     border-width: 6px;
+    overflow: hidden;
 }
 
 @media (min-width: 900px) {
@@ -290,9 +297,25 @@ p{
 }
 
 .window-title h2{
-    font-size: 30px;
+    font-size: 25px;
     display: table-cell;
     vertical-align:middle
+}
+
+.window-title h3{
+    font-size: 15px;
+    display: table-cell;
+    vertical-align:middle
+}
+
+@media (min-width: 900px) {
+    .window-title h2{
+        font-size: 30px;
+    }
+
+    .window-title h3{
+        font-size: 23px;
+    }
 }
 
 .window-title .links-container{
@@ -506,8 +529,8 @@ In need of review
 .web-games-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  padding: 1rem;
+  gap: 1rem;
+  padding: 0rem;
   box-sizing: border-box;
 }
 
@@ -517,25 +540,10 @@ In need of review
         gap: 5rem;
         padding: 5rem;
     }
-}
 
-.web-game-tile{
-  border: 3px solid;
-  border-color: white;
-}
-
-.web-game-tile{
-  overflow: hidden;
-}
-
-.web-game-tile p{
-  margin: 0;
-  padding: 6px 0 6px 6px;
-}
-
-.web-game-tile a{
-  color:white;
-  text-decoration: none;
+    .web-games-grid-container .window {
+        margin-bottom: 0px;
+    }
 }
 
 .web-game-tile img{
