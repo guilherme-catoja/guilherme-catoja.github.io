@@ -127,6 +127,13 @@ body{
     margin: auto;
 }
 
+.image-container a {
+    display: block;
+    width: fit-content;
+    max-width: 496px;
+    margin: auto;
+}
+
 .monitor-image-container img{
     display: block;
     width: 100%;
