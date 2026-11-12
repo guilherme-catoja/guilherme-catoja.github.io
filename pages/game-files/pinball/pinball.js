@@ -527,6 +527,7 @@ const InternalConfig = function (initConfig) { // eslint-disable-line no-unused-
 	 */
 	Config.prototype.getModuleConfig = function (loadPath, response) {
 		let r = response;
+		const workletLoadPath = loadPath === '../common/godot' ? 'pinball' : loadPath;
 		const gdext = this.gdextensionLibs;
 		return {
 			'print': this.onPrint,
@@ -553,9 +554,9 @@ const InternalConfig = function (initConfig) { // eslint-disable-line no-unused-
 				if (!path.startsWith('godot.')) {
 					return path;
 				} else if (path.endsWith('.audio.worklet.js')) {
-					return `${loadPath}.audio.worklet.js`;
+					return `${workletLoadPath}.audio.worklet.js`;
 				} else if (path.endsWith('.audio.position.worklet.js')) {
-					return `${loadPath}.audio.position.worklet.js`;
+					return `${workletLoadPath}.audio.position.worklet.js`;
 				} else if (path.endsWith('.js')) {
 					return `${loadPath}.js`;
 				} else if (path in gdext) {
