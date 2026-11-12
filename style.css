@@ -529,8 +529,55 @@ p{
     margin-bottom: 32px;
 }
 
+.progress-bar{
+    width: min(320px, 80vw);
+    border: 3px solid white;
+    background-color: #120e14;
+}
 
+.skill-item{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 12px;
+}
 
+.skill-item span:first-child{
+    text-align: right;
+}
+
+.skill-item span:last-child{
+    text-align: left;
+}
+
+.skill-item .progress-bar{
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .skill-item{
+        grid-template-columns: 1fr;
+        gap: 4px;
+        justify-items: center;
+    }
+
+    .skill-item span:first-child,
+    .skill-item span:last-child{
+        text-align: center;
+    }
+}
+
+.progress-bar::-webkit-progress-bar {
+    background-color: #120e14;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: white;
+}
+
+.progress-bar::-moz-progress-bar {
+    background-color: white;
+}
 /*
 In need of review 
         |
