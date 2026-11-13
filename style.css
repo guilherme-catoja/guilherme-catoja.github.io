@@ -300,20 +300,24 @@ p{
 
 .window-title{
     background: linear-gradient(90deg,#5c4f7d 0%, #8472ad 100%);
-    display: table;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .window-title h2{
     font-size: 25px;
-    display: table-cell;
-    vertical-align:middle
+    margin: 0;
+    margin-bottom: 6px;
+    
 }
 
 .window-title h3{
     font-size: 15px;
-    display: table-cell;
-    vertical-align:middle
+    margin: 0;
+    margin-bottom: 6px;
+    
 }
 
 @media (min-width: 900px) {
@@ -327,7 +331,8 @@ p{
 }
 
 .window-title .links-container{
-    justify-content: right;
+    margin: 0;
+    margin-bottom: 6px;
 }
 
 .window-title a{
