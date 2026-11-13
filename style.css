@@ -310,14 +310,14 @@ p{
     font-size: 25px;
     margin: 0;
     margin-bottom: 6px;
-    
+    line-height: 1;
 }
 
 .window-title h3{
     font-size: 15px;
     margin: 0;
     margin-bottom: 6px;
-    
+    line-height: 1;
 }
 
 @media (min-width: 900px) {
@@ -639,6 +639,11 @@ In need of review
 
   margin: 0;
 }
+
+.web-game-tile .window-title {
+  width: auto;
+}
+
 
 .tile-image-container img {
   width: 100%;
