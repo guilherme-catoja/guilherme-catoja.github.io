@@ -248,6 +248,16 @@ p{
     margin-top: 128px;
 }
 
+.page-title2 {
+    margin-top: 128px;
+    margin-bottom: 16px;
+}
+
+.page-subtitle {
+    margin-top: 0px;
+    margin-bottom: 58px;
+}
+
 .main-links-container{
     margin: 38px;
     display: flex;
