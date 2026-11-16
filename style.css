@@ -298,6 +298,7 @@ p{
     border-style: solid;
     border-image: linear-gradient(to right,rgba(92, 79, 125, 1) 0%, rgba(132, 114, 173, 1) 100%) 1;
     border-width: 6px;
+    border-top: 0px;
     overflow: hidden;
 }
 
@@ -314,6 +315,7 @@ p{
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+    padding-top: 6px;
 }
 
 .window-title h2{
