@@ -295,11 +295,14 @@ p{
     margin: 0;
     margin-bottom: 96px;
     text-align: left;
-    border-style: solid;
-    border-image: linear-gradient(to right,rgba(92, 79, 125, 1) 0%, rgba(132, 114, 173, 1) 100%) 1;
-    border-width: 6px;
-    border-top: 0px;
+    background: linear-gradient(90deg,#5c4f7d 0%, #8472ad 100%);
     overflow: hidden;
+}
+
+.window-contents {
+    margin: 6px;
+    margin-top: 3px;
+    background-color: #120e14;
 }
 
 @media (min-width: 900px) {
@@ -310,26 +313,21 @@ p{
 }
 
 .window-title{
-    background: linear-gradient(90deg,#5c4f7d 0%, #8472ad 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    padding-top: 6px;
+    padding: 6px;
 }
 
 .window-title h2{
     font-size: 25px;
     margin: 0;
-    margin-bottom: 6px;
-    line-height: 1;
 }
 
 .window-title h3{
     font-size: 15px;
     margin: 0;
-    margin-bottom: 6px;
-    line-height: 1;
 }
 
 @media (min-width: 900px) {
@@ -344,7 +342,6 @@ p{
 
 .window-title .links-container{
     margin: 0;
-    margin-bottom: 6px;
 }
 
 .window-title a{
@@ -392,7 +389,15 @@ p{
 }
 
 .window .monitor-image-container {
-    margin: 8px;
+    padding: 8px;
+}
+
+@media (min-width: 900px) {
+    .window .monitor-image-container {
+        margin: 0px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
 }
 
 .game-tile{
@@ -467,8 +472,8 @@ p{
 
 .game-tile-buttons{
     margin: auto;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     align-items: center;
     display: flex;
     justify-content: space-around;
@@ -656,6 +661,10 @@ In need of review
   width: auto;
 }
 
+.web-game-tile .game-tile-buttons{
+    padding: 12px;
+    margin: 0px;
+}
 
 .tile-image-container img {
   width: 100%;
