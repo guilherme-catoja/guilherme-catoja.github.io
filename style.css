@@ -551,6 +551,12 @@ p{
     margin-bottom: 32px;
 }
 
+.photograph{
+    max-height: 480px;
+    display: block;
+    margin: auto;
+}
+
 .progress-bar{
     width: min(320px, 80vw);
     border: 3px solid white;
