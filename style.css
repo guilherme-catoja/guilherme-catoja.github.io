@@ -687,6 +687,18 @@ In need of review
   box-sizing: border-box;
 }
 
+.youtube-video{
+    width: 90%;
+    aspect-ratio: 16/9;
+}
+
+@media (min-width: 900px) {
+    .youtube-video{
+        width: 640px;
+        height: 360px;
+    }
+}
+
 footer{
     text-align: center;
 }
