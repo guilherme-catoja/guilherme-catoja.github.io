@@ -39,7 +39,7 @@
 /* Scrollbar Chrome, Edge, Safari*/
 
 ::-webkit-scrollbar-track {
-  background: #3f385e;
+  background: #292f38;
 }
 
 ::-webkit-scrollbar {
@@ -51,12 +51,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ab99cf;
-  border: 3px solid #d9caff;
-  border-top-color: #d9caff;
-  border-left-color: #d9caff;
-  border-right-color: #8472ad;
-  border-bottom-color: #8472ad;
+  background: #b6b8c7;
+  border: 3px solid #e1dee7;
+  border-top-color: #e1dee7;
+  border-left-color: #e1dee7;
+  border-right-color: #868d9b;
+  border-bottom-color: #868d9b;
 }
 
 ::-webkit-scrollbar-button {
